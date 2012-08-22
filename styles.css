@@ -1,0 +1,146 @@
+/* Test theme
+Version: 1.0.0.
+Author Site: Natashenka */
+
+@import url("reset.css");
+
+
+/*General Styles*/
+
+html {
+height: 100%;
+}
+
+body {
+	height: 100%;
+	font-family:cursive;
+}
+
+#external_box {
+	background-image: url(img/background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	position: relative;
+	min-width: 1000px;
+	width: 100%;
+	min-height: 100%;
+}
+
+#bottom_picture {
+	position: absolute;
+	bottom: -50px;
+	background-color: transparent;
+	background-image: url(img/background2.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	min-width: 1000px;
+	width: 100%;
+	min-height: 400px;		
+}
+
+#internal_box{
+background: rgba(255, 255, 255, 0.55);
+border-top-left-radius: 30px;
+border-top-right-radius: 30px;
+position: relative;
+top: 100px;
+left: 100px;
+width: 800px;
+height: 600px;
+display: block;
+border: solid 2px white;
+padding: 20px;
+box-shadow: 0px 0px 20px white;
+}
+
+#header {
+	width: 100%;
+}
+
+#menu {
+	text-align: center;
+}
+
+.navigation {
+	font-family:cursive;
+	font-size: 30px;
+	display: inline-block;
+	margin: 20px ;
+}
+
+ul li a {
+	outline: none;
+	text-decoration: none;
+	text-shadow: 0px 0px 10px white; 
+}
+
+a {
+	color: 	#149514;
+	text-shadow: 0px 0px 10px white; 
+}
+
+a:hover{
+	color: #266924;
+	text-shadow: 0px 0px 1px #2A2A2A, 0px 0px 10px #fefe00;
+	font-weight: bold;
+}
+
+.clear {
+	clear: both;
+}
+
+#header{
+	border-bottom: 2px solid #ffffff;
+}
+
+#chosen_li{
+	color: #266924;
+	text-shadow: 0px 0px 1px #2A2A2A, 0px 0px 10px #fefe00;
+	font-weight: bold;
+}
+
+#content p{ 
+	color: #2A2A2A;
+	text-indent: 20px;
+	text-align: justify;
+	margin: 15px 10px;
+	font-weight:80;
+	line-height: 1.2;
+}
+
+.block img{
+	width: 150px;
+	height: auto;
+	float: left;
+	margin: 0px 10px 10px 0px;
+	display: block;
+	box-shadow: 0px 0px 8px white;
+	border: 1px solid white;
+	border-radius: 10px;
+}
+
+.block{
+	margin: 15px 10px;
+	border: 2px solid white;
+	border-radius: 20px;
+	padding: 10px 10px;
+	
+}
+
+#gallery{
+	width: 755px;
+	margin: 25px auto;
+}
+
+img{
+	width: auto;
+	height: 135px;
+	float: left;
+	margin: 10px 10px;
+	display: block;
+	box-shadow: 0px 0px 8px white;
+	border: 1px solid white;
+	border-radius: 10px;
+}
