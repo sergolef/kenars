@@ -3,10 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>Канарейки</title>
-		<link href="css/styles.css" rel="stylesheet" type="text/css" media="all" />
-		<script src="js/jquery-1.7.2.min.js"></script>
-		<script src="js/lightbox.js"></script>
-		<link href="css/lightbox.css" rel="stylesheet" />
+		<link href="styles.css" rel="stylesheet" type="text/css" media="all" />
 	</head>
 </html>
 
@@ -18,47 +15,58 @@
 			<div id='header'>
 				<ul id="menu">
 					<li class="navigation"><a href='index.html' >Главная</a></li>
-					<li class="navigation"><a href='about.html'>О нас</a></li>
+					<li class="navigation"><a href='uhod1.html'>Уход</a></li>
 					<li class="navigation"><a href='photogallery.html'>Галерея</a></li>
-					<li class="navigation"><a href='contacts.html'class='chosen_li'>Контакты</a></li>
+					<li class="navigation"><a href='contacts.html' id='chosen_li'>Контакты</a></li>
 				</ul>
 			</div>
 			<div class='clear'>
 			</div>
 			<div id='content'>
-<form id=payment>
-  <fieldset>
+				
+			<form id=payment>
+  				<fieldset>
           
-          <ol>
-                  <li>
-                          <label for=name>Имя</label>
-                          <input id=name name=name type=text placeholder="Имя и Фамилия" required autofocus>
-                  </li>
-                  <li>
-                          <label for=email>Email</label>
-                          <input id=email name=email type=email placeholder="E-mail Адрес">
-                  </li>
-                  <li>
-                          <label for=phone>Телефон</label>
-                          <input id=phone name=phone type=tel placeholder="Контактный телефон" required>
-                  </li>
-          </ol>
-  </fieldset>
-  <br/>
-  <fieldset>
-            <ol>
-                
-                <li>
-                        <label for=massage>Сообщение</label>
-                        <textarea id=massage name=massage rows=5 required></textarea>
-                </li>
-            </ol>
-  </fieldset>  
-  
-  <fieldset>
-        <button type=submit class="button orange">Отправить</button>
-  </fieldset>
-  </form>
+		          <ol>
+		              <li>
+		                 <label for=name>Имя</label>
+		                 <input id=name name=name type=text placeholder="Имя и Фамилия" required autofocus>
+		              </li>
+		              <li>
+		                 <label for=email>Email</label>
+		                 <input id=email name=email type=email placeholder="E-mail Адрес">
+		              </li>
+		              <li>
+		                 <label for=phone>Телефон</label>
+		                 <input id=phone name=phone type=tel placeholder="Контактный телефон" required>
+		              </li>
+		          </ol>
+  				</fieldset>
+  				<br/>
+				<fieldset>
+				      <ol>
+				         <li>
+				           <label for=massage>Сообщение</label>
+				           <textarea id="massage" name="massage" rows="5" required> </textarea>
+				         </li>
+				      </ol>
+				</fieldset>  
+ 
+				<div class="float_left">
+				   <fieldset>
+				        <button type=submit class="button orange">Очистить</button>
+				   </fieldset>
+				   <fieldset>
+				        <button type=submit class="button orange">Отправить</button>
+				   </fieldset>
+				</div>   
+ 		 </form>
+				
+				
+				
+				
+					
+			
 			</div>
 		</div>
 

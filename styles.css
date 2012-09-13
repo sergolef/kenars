@@ -29,7 +29,7 @@ body {
 
 #bottom_picture {
 	position: absolute;
-	bottom: -50px;
+	bottom: -100px;
 	background-color: transparent;
 	background-image: url(img/background2.png);
 	background-repeat: no-repeat;
@@ -37,7 +37,7 @@ body {
 	background-size: cover;
 	min-width: 1000px;
 	width: 100%;
-	min-height: 400px;		
+	min-height: 300px;		
 }
 
 #internal_box{
@@ -48,16 +48,19 @@ body {
 	top: 100px;
 	margin: 0 auto;
 	width: 800px;
-	height: 600px;	
+	height: auto;	
+	min-height: 900px;
 	display: block;
 	border: solid 2px white;
-	padding: 20px;
+	padding: 20px 20px 0;
 	box-shadow: 0px 0px 20px white;
+	margin-bottom: 100px;
 }
 
 #content{
 	background: rgba(113, 166, 28, 0.65);
-	height: 550px;
+	height: auto;
+	min-height: 850px;
 	width: 800px;
 	position: absolute;
 	top: 70px;
@@ -200,4 +203,160 @@ p{
 a {
 	cursor: pointer;
 	text-decoration: none;
+}
+form#payment {
+    background: none repeat scroll 0 0 rgba(88, 150, 12, 0.5);
+    border-radius: 5px 5px 5px 5px;
+    counter-reset: fieldsets;
+    padding: 20px;
+    width: 400px;
+    height: 455px;
+    margin: 35px auto 0;
+}
+form#payment fieldset {
+    border: medium none;
+    margin-bottom: 10px;
+}
+form#payment fieldset:last-of-type {
+    margin-bottom: 0;
+}
+form#payment legend {
+    color: #384313;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-shadow: 0 1px 1px #C1F7FF;
+
+}
+form#payment > fieldset > legend:before {
+    content: "??? " counter(fieldsets, decimal) ": ";
+    counter-increment: fieldsets;
+}
+form#payment > fieldset > legend:before {
+    content: "??? " counter(fieldsets, decimal) ": ";
+    counter-increment: fieldsets;
+}
+form#payment ol li {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.6);
+    border-radius: 5px 5px 5px 5px;
+    border-style: solid;
+    border-width: 2px;
+    line-height: 30px;
+    list-style: none outside none;
+    margin-bottom: 2px;
+    padding: 5px 10px;
+}
+form#payment ol ol li {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    float: left;
+}
+form#payment label {
+    float: left;
+    font-size: 13px;
+    width: 110px;
+}
+form#payment fieldset fieldset label {
+    background: none no-repeat scroll left 50% transparent;
+    line-height: 20px;
+    padding: 0 0 0 30px;
+    width: auto;
+}
+form#payment label[for="visa"] {
+    background-image: url("visa.gif");
+}
+form#payment label[for="amex"] {
+    background-image: url("amex.gif");
+}
+form#payment label[for="mastercard"] {
+    background-image: url("mastercard.gif");
+}
+form#payment fieldset fieldset label:hover {
+    cursor: pointer;
+}
+form#payment input:not([type="radio"]), form#payment textarea {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: medium none;
+    border-radius: 3px 3px 3px 3px;
+    font: italic 13px Georgia,"Times New Roman",Times,serif;
+    outline: medium none;
+    padding: 5px;
+    width: 366px;
+}
+form#payment input:focus:not([type="submit"]), form#payment textarea:focus {
+    background: none repeat scroll 0 0 #EAEAEA;
+}
+form#payment input[type="radio"] {
+    float: left;
+    margin-right: 5px;
+}
+.button {
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: inline-block;
+    font: 14px/100% Arial,Helvetica,sans-serif;
+    margin: 0 auto;
+    outline: medium none;
+    padding: 0.5em 2em 0.55em;
+    text-align: center;
+    text-decoration: none;
+    
+}
+.button:hover {
+    text-decoration: none;
+}
+.button:active {
+    top: 1px;
+}
+.orange {
+    background: -moz-linear-gradient(center top , #FAA51A, #F47A20) repeat scroll 0 0 transparent;
+    border: 1px solid #DA7C0C;
+    color: #FEF4E9;
+    position: relative;
+    
+}
+.orange:hover {
+    background: -moz-linear-gradient(center top , #F88E11, #F06015) repeat scroll 0 0 transparent;
+}
+.orange:active {
+    background: -moz-linear-gradient(center top , #F47A20, #FAA51A) repeat scroll 0 0 transparent;
+    color: #FCD3A5;
+}
+
+.float_left{
+	float: left;
+}
+fieldset{
+	display: inline-block;
+	margin: 10px;
+}
+
+.preview{
+	width: 160px;
+	height: 120px;
+	float: left;
+	margin: 10px;
+	display: block;
+	border: 2px solid white;
+	border-radius: 10px;
+	z-index: 2;
+}
+
+.preview:hover{
+	width: 160px;
+	height: 120px;
+	float: left;
+	margin: 10px;
+	display: block;
+	box-shadow: 0px 0px 8px white;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
+.preview_pic{
+	width: 160px;
+	height: auto;
+	border-radius: 8px;
 }
